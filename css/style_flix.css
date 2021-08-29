@@ -1,0 +1,111 @@
+:root{
+    --vermelho:#E50914 ;
+    --preto:#141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--preto);
+    font-family: 'arial', Times, serif;
+    color:white;
+    position: relative;
+}
+.bar{
+    display: none;
+}
+
+header nav{
+    display: block;
+    position: relative;
+    
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255) ;
+    display: inline;
+    padding: 10px;
+}
+nav a:hover{
+    transition: .3ss ease-in-out;
+    color: #ccc;
+}
+header .container{
+    margin: 0 5px 0 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container h2{
+    color: var(--vermelho);
+    padding: 5px;
+     font-weight: 900;
+    font-size: 35px;
+    font-family: 'Arial Black',Times;
+     
+}
+
+
+/* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url('../img/capa-house.jpg');
+    /* background-image: url('../img/capa-house.jpg'); */
+    background-size: cover;
+    height: 400px;
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: justify;
+
+}
+
+.titulo{
+    margin-top: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.botao{
+    padding: 15px 25px;
+    background-color: rgba(0, 0, 0, 0.501);
+    color: white;
+    font-size: 11px;
+    border: none;
+    margin-right: 10px;
+}
+.botao:hover{
+    transition: .5s ease-out;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.botao i{
+    margin-right: 9px;
+}
+.container{
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 10px;
+}
